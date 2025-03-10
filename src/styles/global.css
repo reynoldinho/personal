@@ -1,0 +1,11 @@
+/* Add your global styles here */
+:root {
+    --primary-color: #333;
+    --background-color: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, sans-serif;
+}
