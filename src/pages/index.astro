@@ -1,14 +1,64 @@
 ---
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>My Static Site</title>
-	</head>
-	<body>
-		<h1>Hello World!</h1>
-		<p>Welcome to my static site built with Astro!</p>
-	</body>
-</html> 
+<Layout title="joshua.reynolds">
+	<main class="container">
+		<section class="about">
+			<h2>about me</h2>
+			<p>
+				hi im josh, an aspiring software developer with a passion for
+				everything tech. currently, i work as a junior software
+				developer at
+				<a
+					href="https://www.thamestechnology.co.uk/"
+					target="_blank"
+					rel="noopener noreferrer"
+					>Thames Technology
+				</a>
+				and in my personal time i am looking to further my skills in the
+				field to become if nothing else, a solid and reliable developer.
+			</p>
+		</section>
+		<section class="projects">
+			<h2>projects</h2>
+			<div class="project-grid">
+				<a href="/projects/project-1" class="project-card">
+					<h3>project.1</h3>
+					<p>tbd...</p>
+				</a>
+				<a href="/projects/project-2" class="project-card">
+					<h3>project.2</h3>
+					<p>tbd...</p>
+				</a>
+				<a href="/projects/project-3" class="project-card">
+					<h3>project.3</h3>
+					<p>tbd...</p>
+				</a>
+				<a href="/projects/" class="project-card view-all">
+					<h3>the rest...</h3>
+					<p>view all of my projects</p>
+				</a>
+			</div>
+		</section>
+		<section class="skills">
+			<h2>skills</h2>
+			<div class="skill-grid">
+				<div class="skill-card">
+					<h3>langauges</h3>
+					<ul class="skill-list">
+						<li>c#</li>
+						<li>python</li>
+					</ul>
+				</div>
+				<div class="skill-card">
+					<h3>tools</h3>
+					<ul class="skill-list">
+						<li>git</li>
+						<li>powershell</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+</Layout>

@@ -21,6 +21,7 @@ pnpm-debug.log*
 # IDE specific files
 .vscode/
 .idea/
+.cursorrules
 *.suo
 *.ntvs*
 *.njsproj

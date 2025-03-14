@@ -1,4 +1,7 @@
 ---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+
 interface Props {
 	title: string;
 }
@@ -8,11 +11,20 @@ const { title } = Astro.props;
 
 <html lang="en">
 	<head>
+		<link
+			rel="stylesheet"
+			href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/simple-icons-font@v9/font/simple-icons.min.css"
+		/>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<title>{title}</title>
 	</head>
 	<body>
+		<Header />
 		<slot />
 	</body>
-</html> 
+</html>
